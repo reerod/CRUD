@@ -11,7 +11,7 @@ function onChangePassword() {
 
 function isEmailValid() {
     const email = form.email().value;
-    return email ? true : false;
+    return email ? validateEmail(email) : false;
 }
 
 function toggleEmailErrors () {
@@ -35,6 +35,7 @@ function toggleButtonsDisable() {
 
     const passwordValid = isPasswordValid();
     form.login().disabled = !emailValid || !passwordValid;
+
 }
 
 function isPasswordValid() {

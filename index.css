@@ -4,19 +4,37 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-form {
-    width: 300px;
-}
-input {
-    border: none;
-}
-input, button {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: -webkit-fill-available;
-}
-button {
-    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    color: #333; /* Cor de texto mais suave */
+    margin: 0;
 }
 
+form {
+    width: 320px;
+    background-color: #fff; /* Adiciona fundo branco para contraste */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%; /* Corrige o preenchimento automático */
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que padding não afete o tamanho do input */
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(45, 211, 111);
+    box-shadow: 0 0 5px rgba(45, 211, 111, 0.5); /* Efeito de foco suave */
+}
+
+button {
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
