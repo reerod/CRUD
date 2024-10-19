@@ -1,0 +1,33 @@
+.clear {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.solid {
+    background: white;
+    border: none;
+    color: rgb(45, 211, 111);
+}
+
+.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+button:active {
+    opacity: 0.8;
+}
+button[disabled] {
+    opacity: 0.7;
+}
+
+.error {
+    color: white;
+    background: red;
+    display: none;
+    margin-top: -10px; /* Aproxima a mensagem do input */
+    margin-bottom: 10px; /* Espaçamento entre a mensagem de erro e o próximo input */
+    position: relative; /* Para garantir que o posicionamento fique em relação ao fluxo normal */
+}
